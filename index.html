@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop</title>
+    <link href="main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="jsdelivr.css">
+    <script src="https://kit.fontawesome.com/e8a104819c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo_img">
+        <img src="pictures/barbershop_logo.jpg" alt="logo" class="logo" />
+      </div>
+      <section>
+        <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+        <div class="navbar">
+          <ul class="nav-list">
+            <li class="nvm">
+              <a href="service.html" class="navlink">Szolgáltatások</a>
+            </li>
+            <li class="nvm">
+              <a href="service.html" class="navlink">Referenciamunkák</a>
+            </li>
+            <li class="nvm">
+              <a href="service.html" class="navlink">Barbereink</a>
+            </li>
+            <li class="nvm">
+              <a href="service.html" class="navlink">Időpontfoglalás</a>
+            </li>
+          </ul>
+        </div>
+        <div class="script" id="script">
+          <h1>2044 Budaörs, Sport u. 2-4.</h1>
+          <button class="btn" href="booking.html">Időpontfoglalás</button>
+        </div>
+      </section>
+      <script src="app.js"></script>
+    </header>
+    
+    <!-- <div class="barberek swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Ecsedi Csaba</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Madarasi Ádám</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Stark Ottó</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Kovács Kristóf</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Somogyi Benedek</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Rostás Patrik</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Róth Erik</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Gál Tamás</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Ayrton De Oliveria</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="pictures/barberprofile.png" alt="User Image" class="user-image">
+              <h2 class="user-name">Nagy Ádám</h2>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <button class="reserv-button">Foglalj most!</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  -->
+  <div class="pricing">
+    
+    <div class="pricing_txt">
+      <p>Árlista/Pricing</p>
+    </div>
+    <div class="barber-senior-btn" id="barber-senior-btn">
+      <button onClick="showElementA()" class="barber-btn" id="barber_btn">Barber</button>
+      <button onClick="showElementB()" class="senior-btn" id="senior_btn">Senior</button>
+    </div>
+
+    <!-------SZOLGÁLTATÁS ÁRAK------->
+
+    <!-------Barber ÁRAK------->
+
+    <div class="all-services">
+      
+
+      <div class="barber-price" id="elementA">
+
+        <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Hajvágás</h5>
+      <h6 class="price">6300.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Hosszúhaj-vágás ollóval</h5>
+      <h6 class="price">7700.-</h6>
+      <p class="duration">1 óra</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Hajvágás+szakáll igazítás</h5>
+      <h6 class="price">9200.-</h6>
+      <p class="duration">1 óra</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Szakáll pengés és gépi Igazítás</h5>
+      <h6 class="price">4000.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Skin fade hajvágás</h5>
+      <h6 class="price">7000.-</h6>
+      <p class="duration">45 perc</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Borotválás</h5>
+      <h6 class="price">5800.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Barber Treatment</h5>
+      <h6 class="price">9600.-</h6>
+      <p class="duration">1 óra</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Egyhossz gépi vágás</h5>
+      <h6 class="price">3800.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Hosszú szakáll pengés és gépi igazítás</h5>
+      <h6 class="price">4800.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Gyermek Hajvágás</h5>
+      <h6 class="price">5500.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="barber_prices" id="barber_prices">
+      <h5 class="service">Kontúrigazítás + nyakszőr borotválás</h5>
+      <h6 class="price">3500.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+      </div>
+
+
+      <div class="senior-price" id="elementB" style="display: none">
+
+        <!--SENIOR BORBÉLY ÁRAK-->
+
+    <div class="senior_prices" id="senior_prices">
+      <h5 class="service">Hajvágás</h5>
+      <h6 class="price">6800.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Hosszúhaj-vágás ollóval</h5>
+      <h6 class="price">8300.-</h6>
+      <p class="duration">1 óra</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Hajvágás+szakáll igazítás</h5>
+      <h6 class="price">9900.-</h6>
+      <p class="duration">1 óra</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Szakáll pengés és gépi Igazítás</h5>
+      <h6 class="price">4800.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Skin fade hajvágás</h5>
+      <h6 class="price">7500.-</h6>
+      <p class="duration">45 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Borotválás</h5>
+      <h6 class="price">6300.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Barber Treatment</h5>
+      <h6 class="price">10 100.-</h6>
+      <p class="duration">1 óra</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Egyhossz gépi vágás</h5>
+      <h6 class="price">4000.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Hosszú szakáll pengés és gépi igazítás</h5>
+      <h6 class="price">5300.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Szakállfestés</h5>
+      <h6 class="price">5300.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Szakáll igazítás + szakáll festés</h5>
+      <h6 class="price">9600.-</h6>
+      <p class="duration">1 óra</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Hajvágás + szakáll igazítás + szakáll festés</h5>
+      <h6 class="price">14 600.-</h6>
+      <p class="duration">1 óra 30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Hajvágás + szakáll igazítás + hajfestés</h5>
+      <h6 class="price">15 100.-</h6>
+      <p class="duration">1 óra 30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Hajvágás +hajfestés</h5>
+      <h6 class="price">10 600.-</h6>
+      <p class="duration">1 óra</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Hajfestés, őszhaj fedés</h5>
+      <h6 class="price">6000.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Gyermek Hajvágás</h5>
+      <h6 class="price">6000.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+
+    <div class="senior_prices">
+      <h5 class="service">Kontúrigazítás + nyakszőr borotválás</h5>
+      <h6 class="price">4000.-</h6>
+      <p class="duration">30 perc</p>
+    </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  </body>
+</html>
